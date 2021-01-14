@@ -1,9 +1,106 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <h1 Style='color:red;'>Hello wooooorld</h1>
-    </head>
+    <style>
+        body{
+            width:98% ;
+            height:77%;
+            margin:0px;
+        }
+        .dots{
+            width:20px;
+        }
+        .container1{
+            width:100%;
+            display:grid;
+            grid-template-columns: 60px 1070px 60px 80px 50px 60px;
+            justify-items: start;
+            color:rgb(121, 121, 121);
+        }
+        .container2{
+            width:100%;
+            display:grid;
+            grid-template-columns:90px 75px 1010px 60px 60px 60px;
+            justify-items: start;
+        }
+        footer{
+            display:block;
+            position:relative;
+            margin: 0px;
+            width:100%;
+            height:30px;
+            top:92%;
+            background-color:rgba(177, 177, 177, 0.61)
+        }
+        ul{
+            list-style-type: none;
+            padding: 0px 0px 10px 15px;
+            width:max-content;
+            display: flex;
+            align-items: center;
+            justify-items: flex-start;
+        }
+        .logo{
+            margin: auto;
+            position:relative;
+            top: 18%;
+            display: flex;
+        }
+        #searchbar{
+            position:relative;
+            top: 20%;
+            height: 35px;
+            width: 450px;
+            display: flex;
+            margin: auto;
+            border: 1px solid;
+            border-top-left-radius: 24px;
+            border-top-right-radius: 24px;
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 24px;
+            border-color:rgb(201, 204, 204);
+        }
+        #gog{
+            position:relative;
+            top:23%;
+            width:130px;
+            height:35px;
+            left:570px;
+        }
+        #luc{
+            position:relative;
+            top:23%;
+            width:130px;
+            height:35px;
+            left:590px;
+        }
+    </style>
     <body>
-
-    </body>
+    <header>
+        <ul class='container1'>
+            <li>About</li>
+            <li>Store</li>
+            <li>Gmail</li>
+            <li>Images</li>
+            <li style='justify-slef:center;'><img src='https://static.thenounproject.com/png/10563-200.png' alt='dots' class='dots'></li>
+            <li class='blue-bordered'>Sign in</li>
+        </ul>
+    </header>
+        <img class="logo"
+            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+            alt='google logo'>  
+        <label for="searchbar"></label>
+        <input type="search" id='searchbar' name='searchbar'>
+            <button id='gog' type="submit">Google Search</button>
+            <button id='luc' type='button'>I'm Felling Lucky</button>
+    
+    <footer>
+        <ul class='container2' style='font-size:15px;'>
+            <il>Advertising</il>
+            <il>Business</il>
+            <il>How Search Works</il>
+            <il>Privacy</il>
+            <il>Terms</il>
+            <il>Settings</il>
+        </ul>
+    </footer>
+</body>
 </html>
